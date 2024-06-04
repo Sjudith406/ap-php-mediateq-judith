@@ -1,0 +1,98 @@
+<?php
+
+public function rechercheAvancee() {
+    // Vérifiez si le formulaire a été soumis
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Récupérez et nettoyez les données du formulaire
+        $searchType1 = clean_data($_POST["searchType1"]);
+        $searchText1 = clean_data($_POST["searchText1"]);
+        $searchType2 = clean_data($_POST["searchType2"]);
+        $searchText2 = clean_data($_POST["searchText2"]);
+        $searchType3 = clean_data($_POST["searchType3"]);
+        $searchText3 = clean_data($_POST["searchText3"]);
+
+        // Construisez dynamiquement la requête SQL en fonction des critères de recherche
+        $sql = "SELECT * FROM emprunt WHERE ";
+        $conditions = [];
+
+        if ($searchType1 && $searchText1) {
+            $conditions[] = "$searchType1 LIKE '%$searchText1%'";
+        }
+        if ($searchType2 && $searchText2) {
+            $conditions[] = "$searchType2 LIKE '%$searchText2%'";
+        }
+        if ($searchType3 && $searchText3) {
+            $conditions[] = "$searchType3 LIKE '%$searchText3%'";
+        }
+
+        // Combinez les conditions avec l'opérateur AND
+        $sql .= implode(" AND ", $conditions);
+
+        // Exécutez la requête SQL
+        // Assurez-vous d'avoir une instance de PDO configurée pour votre connexion à la base de données
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute();
+
+        // Récupérez les résultats de la requête
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Affichez ou traitez les résultats de la recherche
+        // Par exemple, vous pouvez les afficher dans une vue ou les manipuler dans votre code
+
+    } else {
+        // Si le formulaire n'a pas été soumis, affichez le formulaire de recherche avancée
+        include 'vues/recherche_avancee.php';
+    }
+}
+
+public function getEmpruntsByCritere($critere) {
+        // Initialisation de la requête SQL
+        $sql = "SELECT * FROM emprunt WHERE ";
+        
+        // Initialisation de la clause WHERE
+        $clause_where = '';
+        // Définition des clauses WHERE en fonction des critères de recherche
+        foreach ($critere as $index => $critere_recherche) {
+            if ($index !== 0) {
+                $clause_where .= " {$critere_recherche['operateur']} ";
+            }
+
+            // Ajoutez des conditions en fonction des critères
+            switch ($critere_recherche['type']) {
+                case 'titre':
+                    $sql .= "titre = :titre";
+                    break;
+                case 'auteur':
+                    $sql .= "auteur = :auteur";
+                    break;
+                case 'sujet':
+                    $sql .= "sujet = :sujet";
+                    break;
+                case 'tout_mots':
+                    $sql .= "tout_mots = :tout_mots";
+                    break;
+                case 'exp_exacte':
+                    $sql .= "exp_exacte = :exp_exacte";
+                    break;
+            }
+        }
+
+        // Préparation de la requête
+        $stmt = $this->pdo->prepare($sql);
+
+        // Liaison des valeurs des paramètres avec les critères
+        foreach ($critere as $critere_recherche) {
+            $stmt->bindValue(':' . $critere_recherche['type'], $critere_recherche['value']);
+        }
+
+        // Exécution de la requête
+        $stmt->execute();
+
+        // Récupération des résultats
+        $resultats = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Retour des résultats
+        return $resultats;
+    }
+}
+?>
