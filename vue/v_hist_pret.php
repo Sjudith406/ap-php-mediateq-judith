@@ -13,10 +13,10 @@
                             <option value="revue" >Revue</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-7 modHist">
+                    <div class="form-group col-md-8 modHist">
                         <input id="searchText" name="searchText" class="form-control" placeholder="Saisissez les termes de votre recherche." type="text">
                     </div>
-                    <div class="form-group col-md-3 modHist">
+                    <div class="form-group col-md-2 modHist">
                         <button type="submit" name="recherche_pret" class="btn btn-primary col-md-10 "><span class="glyphicon glyphicon-floppy-disk"></span>Recherche</a>
                     </div>
                 </div>
