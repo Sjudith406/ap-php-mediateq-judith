@@ -1,5 +1,9 @@
+<style>
+
+</style>
+
 <div class="container">
-    <h2><?= $text ?></h2>
+    <h4><?= $text ?></h4>
         <div class="row">
             <div class="col-12 mt-3">
             <?php 
@@ -7,10 +11,10 @@
                     <p>Aucun document réservé</p>
      <?php      }
                 else{ ?>
-                    <h4>Document : </h4>
+                   <!-- <div class="t_doc"><h4>Document </h4></div> -->
         <?php       foreach ($reservationDoc as $reservation){ ?>
                         <div class="card">
-                            <div class="card-horizontal">
+                            <div class="card-horizontal reserve_horizontal">
                                 <div class="img-square-wrapper">
                                     <img class="" src="<?= $reservation->getImage() ?>" alt="<?= $reservation->getTitre() ?>">
                                 </div>
@@ -37,10 +41,10 @@
                     <p>Aucune revue réservée</p> 
         <?php   }
                 else{ ?>
-                    <h4>Revue : </h4>
+                    <!-- <div class="t_doc"><h4>Revue </h4></div> -->
         <?php       foreach ($reservationRevue as $reservation1){ ?>
                         <div class="card">
-                            <div class="card-horizontal">
+                            <div class="card-horizontal reserve_horizontal">
                                 <div class="img-square-wrapper">
                                     <img class="" src="<?= $reservation1->getImage() ?>" alt="">
                                 </div>

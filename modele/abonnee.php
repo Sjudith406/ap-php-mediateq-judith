@@ -8,12 +8,10 @@ class Abonnee
     private string $adresseA;
     private string $numTel;
     private string $typeA;
-    private string $numA;
     private string $mailA;
 
-    public function __construct(string $numA, string $loginA, string $nomA, string $prenomA, string $mdpA, string $adresseA, string $numTel, string $typeA, string $mailA)
+    public function __construct(string $loginA, string $nomA, string $prenomA, string $mdpA, string $adresseA, string $numTel, string $typeA, string $mailA)
     {
-        $this->numA = $numA;
         $this->loginA = $loginA;
         $this->nomA = $nomA;
         $this->prenomA = $prenomA;
@@ -24,10 +22,6 @@ class Abonnee
         $this->mailA = $mailA;
     }
 
-    public function getNumA() : string
-    {
-        return $this->numA;
-    }
 
     public function getMailA() : string
     {

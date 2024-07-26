@@ -10,7 +10,7 @@ class AbonneeManager extends Manager
         $q->execute();
         $donnees = $q->fetch(PDO::FETCH_ASSOC);
         
-        return new Abonnee($donnees['numA'], $donnees['loginA'], $donnees['nomA'], $donnees['prenomA'], $donnees['mdpA'], $donnees['adresseA'], $donnees['numTel'], $donnees['typeA'], $donnees['mailA']);
+        return new Abonnee( $donnees['loginA'], $donnees['nomA'], $donnees['prenomA'], $donnees['mdpA'], $donnees['adresseA'], $donnees['numTel'], $donnees['typeA'], $donnees['mailA']);
     }
  
     
@@ -27,7 +27,7 @@ class AbonneeManager extends Manager
                 $req->execute();
                 while ($donnees = $req->fetch(PDO::FETCH_ASSOC))
                 {
-                    $abonnees[$donnees['loginA']] = new Abonnee($donnees['loginA'], $donnees['nomA'], $donnees['prenomA'], $donnees['mdpA'], $donnees['adresseA'], $donnees['numTel'], $donnees['typeA'], $donnees['mailA'], $donnees['numA']);
+                    $abonnees[$donnees['loginA']] = new Abonnee($donnees['loginA'], $donnees['nomA'], $donnees['prenomA'], $donnees['mdpA'], $donnees['adresseA'], $donnees['numTel'], $donnees['typeA'], $donnees['mailA']);
                 }
                 
                 return $abonnees;

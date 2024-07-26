@@ -1,3 +1,20 @@
+
+<i class="fa-solid fa-envelope"></i>
+<i class="fa-solid fa-phone"></i>
+<i class="fa-solid fa-list"></i>
+<i class="fa-solid fa-circle-info"></i>
+<i class="fa-solid fa-user"></i>
+<i class="fa-solid fa-location-dot"></i>
+<i class="fa-solid fa-arrow-right-to-bracket"></i>
+<i class="fa-solid fa-arrow-right-from-bracket"></i>
+<i class="fa-solid fa-euro-sign"></i>
+<i class="fa-regular fa-newspaper"></i>
+<i class="fa-regular fa-file-lines"></i>
+<i class="fa-regular fa-clock"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+<i class="fa-solid fa-bookmark"></i>
+<i class="fa-solid fa-angle-right"></i>
+
 <!-- <div class="card-footer">
                 <p>
                     <?php
@@ -179,25 +196,35 @@ date fin env : 2024-04-20
 
 UPDATE `document` SET `image` = 'https://static.fnac-static.com/multimedia/Images/FR/NR/cf/db/73/7592911/1540-1/tsp20230427073803/Et-je-danse-aui-tome-1.jpg' WHERE `document`.`id` = 3; UPDATE `document` SET `image` = 'https://www.onlalu.com/wp-content/uploads/2013/06/larmeefurieuse-180x293.gif' WHERE `document`.`id` = 4; UPDATE `document` SET `image` = 'https://bdi.dlpdomain.com/album/9782870971703-couv.jpg' WHERE `document`.`id` = 6; UPDATE `document` SET `image` = 'https://static.fnac-static.com/multimedia/PE/Images/FR/NR/66/21/04/270694/1540-1/tsp20240405090046/Dans-les-coulies-du-musee.jpg' WHERE `document`.`id` = 7; UPDATE `document` SET `image` = 'https://static.fnac-static.com/multimedia/PE/Images/FR/NR/79/10/1c/1839225/1540-1/tsp20240401071407/Pars-vite-et-reviens-tard-Claiques-et-Contemporains.jpg' WHERE `document`.`id` = 9;
 
-  UPDATE `document` SET `commandeEnCours` = '0' WHERE `document`.`id` = 1; UPDATE `document` SET `commandeEnCours` = '0' WHERE `document`.`id` = 2; UPDATE `document` SET `commandeEnCours` = '0' WHERE `document`.`id` = 3; UPDATE `document` SET `commandeEnCours` = '0' WHERE `document`.`id` = 4; UPDATE `document` SET `commandeEnCours` = '0' WHERE `document`.`id` = 5; UPDATE `document` SET `commandeEnCours` = '0' WHERE `document`.`id` = 6; UPDATE `document` SET `commandeEnCours` = '0' WHERE `document`.`id` = 7; UPDATE `document` SET `commandeEnCours` = '0' WHERE `document`.`id` = 8;
-  harry: https://static.fnac-static.com/multimedia/Images/FR/NR/48/7a/7c/8157768/1540-1/tsp20160622103256/Harry-Potter-a-l-ecole-des-sorciers-DVD.jpg
-
-  UPDATE `document` SET `image` = 'https://static.fnac-static.com/multimedia/Images/FR/NR/9b/ce/2a/2805403/1540-1/tsp20220611062854/Les-deferlantes.jpg' WHERE `document`.`id` = 21; UPDATE `document` SET `image` = 'https://static.fnac-static.com/multimedia/Images/FR/NR/05/30/04/274437/1540-1/tsp20230308151632/De-Cape-et-de-Crocs.jpg' WHERE `document`.`id` = 25; UPDATE `document` SET `commandeEnCours` = '0' WHERE `document`.`id` = 26; UPDATE `document` SET `image` = 'https://play-lh.googleusercontent.com/wo2WL8Sp6XSvQ2x9RSSWcKBKc7NoxTwBK1bqj9Vzt1Z8ZyDcTdaBEt3fZKnOK2WWDto=w240-h480-rw' WHERE `document`.`id` = 27; UPDATE `document` SET `image` = 'https://static.fnac-static.com/multimedia/Images/FR/NR/1f/f8/cf/13629471/1540-1/tsp20210811103747/Cruella-DVD.jpg', `idPublic` = '3' WHERE `document`.`id` = 29;
-  Chris Columbus
-  UPDATE `document` SET `image` = 'https://static.fnac-static.com/multimedia/Images/FR/NR/7c/70/b1/11628668/1540-1/tsp20200206104104/Star-Wars-La-Menace-Fantome-Episode-1-DVD.jpg' WHERE `document`.`id` = 28;
-
-
-  `nbPage` = '528', `Date` = '2013-04-17' WHERE `livre`.`idDocument` = 11; UPDATE `livre` SET `ISBN` = ' 2253112127', `collection` = 'Ldp', `description` = 'Un détective privé enquête à Cambridge sur des affaires criminelles dont le mystère n’a jamais été éclairci. Il doit remonter à des événements antérieurs, souvent très lointains, pour suivre les traces de la mystérieuse « souris bleue ». ', `nbPage` = '414', `Date` = '2006-06-07' WHERE `livre`.`idDocument` = 12; UPDATE `livre` SET `ISBN` = ' 2246001188', `collection` = 'Bandes Dessinees', `description` = 'Ce best-seller anglais, devenu célèbre aussi en France, met en scène un père Noël grognon : encore ce 24 décembre ! Encore la neige ! Il aime son chien, son chat, à peine ses reines et pas du tout sa besogne.', `nbPage` = '28', `Date` = '2007-11-20' WHERE `livre`.`idDocument` = 13; UPDATE `livre` SET `ISBN` = '2253176079', `collection` = 'Ldp Thriller', `description` = 'Texas, 1964. Après l\'assassinat de leur mère, Elliott et Clarence passent de maisons de correction en établissements pénitentiaires pour mineurs.', `nbPage` = '600', `Date` = '2014-10-01' WHERE `livre`.`idDocument` = 14; UPDATE `livre` SET `ISBN` = ' 2377420532', `description` = 'Un roman-jeu illustré où le lecteur mène l\'enquête !Ça y est, c\'est la rentrée en sixième pour les jumeaux Alix et Théo, qui découvrent le collège de leur petit village d\'Aimange.', `nbPage` = '216', `Date` = '2019-02-14' WHERE `livre`.`idDocument` = 15; UPDATE `livre` SET `ISBN` = ' 2330121873', `collection` = 'L\'agence Malice Et Reglisse Po', `description` = 'Quatre nouvelles enquêtes pour les fins limiers de l\'agence Malice et Réglisse. Les jeunes détectives en herbe devront élucider des énigmes et vols en tous genres, bijoux dérobés...', `nbPage` = '128', `Date` = '2019-06-12' WHERE `livre`.`idDocument` = 16; UPDATE `livre` SET `ISBN` = '2747049760', `collection` = ' Les 39 clès', `description` = 'Amy et Dan reviennent à New York, leur ville natale. Dans un dernier message, Vesper I leur a ordonné de retrouver le manuscrit de Voynich à l\'université de Yale. ', `nbPage` = '240', `Date` = '2015-10-22' WHERE `livre`.`idDocument` = 17;
-UPDATE `livre` SET `ISBN` = ' 2017249726', `auteur` = 'Collectif', `collection` = 'Guide du Routard Etranger', `description` = 'Le Maroc est riche autant de ses grands espaces que de ses villes  : arpentez l’Atlas, perdez-vous dans les souks, découvrez les palais luxueux de la médina de Marrakech, avant de vous ébahir devant la moderne mosquée Hassan-II à Casablanca ou dans la kasbah des Oudaïa à Rabat.', `nbPage` = '684', `Date` = '2023-10-18' WHERE `livre`.`idDocument` = 18; UPDATE `livre` SET `ISBN` = ' 2067255614', `auteur` = 'Collectif', `nbPage` = '160', `Date` = '2022-03-11' WHERE `livre`.`idDocument` = 19; UPDATE `livre` SET `ISBN` = ' 2067256912', `auteur` = 'Collectif', `collection` = 'Guide T Vert Europe', `description` = 'Laissez-vous guider par nos auteurs ! Au cours de leurs innombrables tournées, ils ont déniché pour vous des lieux inoubliables ou insolites :- Les incontournables (classés 1, 2 ou 3 étoiles) : Chaussée des Géants***, Dublin***, Kilkenny**...', `nbPage` = '576', `Date` = '2023-03-31' WHERE `livre`.`idDocument` = 20; UPDATE `livre` SET `collection` = 'Littérature', `nbPage` = '544', `Date` = '2010-05-29' WHERE `livre`.`idDocument` = 21; UPDATE `livre` SET `collection` = 'Littérature', `nbPage` = '608' WHERE `livre`.`idDocument` = 22; UPDATE `livre` SET `ISBN` = ' 2840550598', `collection` = 'Terres De Légendes', `description` = 'À bord d\'un vaisseau turc, un coffre. Dans le coffre, un écrin, dans l\'écrin, une bouteille, dans la bouteille, une carte, et sur cette carte... l\'emplacement du fabuleux trésor des îles Tangerines !...', `nbPage` = '48', `Date` = '2004-01-01' WHERE `livre`.`idDocument` = 23; UPDATE `livre` SET `ISBN` = ' 2840551438', `collection` = 'Terres De Légendes', `description` = 'Gentilhomme, hidalgo, corsaire barbaresque et lapin font voile vers les îles Tangerines et leur trésor. Mais avant d\'atteindre le mythique archipel battu par les tempêtes...', `nbPage` = '48', `Date` = '2004-01-01' WHERE `livre`.`idDocument` = 24; UPDATE `livre` SET `ISBN` = ' 2840552361', `collection` = 'Terres De Légendes', `description` = 'Voguant à bord du Hollandais Volant vers les îles Tangerines et leur trésor, nos héros s\'emparent d\'un navire pirate, délivrent une belle captive, subissent l\'ire d\'un monstre marin, font naufrage, explorent une île étrange, participent à une expérience...', `nbPage` = '48', `Date` = '2004-01-01' WHERE `livre`.`idDocument` = 25;
-
-UPDATE `livre` SET `ISBN` = ' 2290024872', `description` = 'C\'est à La Hague - un bout du monde à la pointe du Cotentin - que la narratrice est venue se réfugier. Elle arpente les landes, observe les oiseaux migrateurs... et Lambert, homme mystérieux et tourmenté aperçu un jour de tempête, et qui n\'a cessé depuis lors d\'éveiller sa curiosité.' WHERE `livre`.`idDocument` = 21; UPDATE `livre` SET `ISBN` = ' 2290099791', `description` = 'Carole rejoint, à l\'approche des fêtes de Noël, le village de son adolescence où vivent Philippe, son frère, garde forestier, et Gaby, sa soeur. Les voilà réunis dans l\'attente de Curtil, ce père toujours absent mais qui parfois les convoque en leur envoyant une boule à neige en verre.', `Date` = '2016-10-26' WHERE `livre`.`idDocument` = 22;
-
-//typeDoc
-UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 1; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 2; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 3; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 4; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 5; UPDATE `document` SET `type_document` = 'Bande Dessinées' WHERE `document`.`id` = 6; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 7; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 8; UPDATE `document` SET `type_document` = 'Document Scolaire/Universitaire' WHERE `document`.`id` = 9; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 10; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 11; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 12; UPDATE `document` SET `type_document` = 'Document Jeunesse' WHERE `document`.`id` = 13;
-UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 14; UPDATE `document` SET `type_document` = 'Roman Junior' WHERE `document`.`id` = 15; UPDATE `document` SET `type_document` = 'Document Jeunesse' WHERE `document`.`id` = 16; UPDATE `document` SET `type_document` = 'Roman Junior' WHERE `document`.`id` = 17; UPDATE `document` SET `type_document` = 'Guide' WHERE `document`.`id` = 18; UPDATE `document` SET `type_document` = 'Guide' WHERE `document`.`id` = 19; UPDATE `document` SET `type_document` = 'Guide' WHERE `document`.`id` = 20; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 21; UPDATE `document` SET `type_document` = 'Roman' WHERE `document`.`id` = 22; UPDATE `document` SET `type_document` = 'Bande Dessinées' WHERE `document`.`id` = 23; UPDATE `document` SET `type_document` = 'Bande Dessinées' WHERE `document`.`id` = 24; UPDATE `document` SET `type_document` = 'Bande Dessinées' WHERE `document`.`id` = 25;
 UPDATE `document` SET `type_document` = 'Film' WHERE `document`.`id` = 26; UPDATE `document` SET `type_document` = 'Film' WHERE `document`.`id` = 27; UPDATE `document` SET `image` = 'https://static.fnac-static.com/multimedia/Images/FR/NR/86/70/b1/11628678/1540-1/tsp20200206104104/Star-Wars-Un-Nouvel-Espoir-Episode-4-DVD.jpg', `type_document` = 'Film' WHERE `document`.`id` = 28; UPDATE `document` SET `type_document` = 'Film' WHERE `document`.`id` = 29;
 
                             <option value="titre" >Titre</option>
                             <option value="realisateur" >Réalisateur</option>
                             <option value="auteur" >Auteur</option>
                             <option value="sujet" >Sujet</option>
+                            <div class="box_renseignements">
+        <p class="text-muted">Liens utiles</p>
+        <div class="menu_flot">
+            
+            <div class="questions">
+                <p class="card-text">Historique de recherche </p>
+                <li class="nav-item">
+                    <a class="renseigne_1" href="./?action=modifMdp">Modifier mon mot de passe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="renseigne_2" href="./?action=modifDossier">Modifier les renseignements personnels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="renseigne_3" href="#">Comment signaler la perte de ma carte ?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="renseigne_4" href="#">Comment renouveler mon abonnement ?</a>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    /* Pour la commande je voulais payer uniquement le lot de deux, mais après le paiement il y a une page qui m'a proposer d'ajouter une autre culotte et en cherchant les détails j'ai cliqué sur ajouter. J'aimerais demander la possibilité de supprimer cette culotte de 9,99 euro de ma commande  car je ne la veut pas. Merci pour votre compréhension.
+
+Cordialement, 
+Judith. */

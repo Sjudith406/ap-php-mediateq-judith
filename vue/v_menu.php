@@ -27,24 +27,69 @@
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Dossier d'abonné
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="./?action=dossier">Mon dossier</a>
+                    <div class="dropdown-menu menue" aria-labelledby="navbarDropdown">
+                      <div class="list_menu">
+                        <div class="acces_menu">
+                          <i class="fa-solid fa-user"></i>
+                          <a class="coco" href="./?action=dossier">Mon dossier</a>
+                      </div>
+                      </div>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="./?action=emprunt">Mes prêts et prolongation</a>
-                      <a class="dropdown-item" href="./?action=reservation">Mes réservations</a>
-                      <a class="dropdown-item" href="./?action=liste">Mes Listes</a>
-                      <a class="dropdown-item" href="./?action=frais">Mes frais</a>
+                      <div class="list_menu">
+                        <div class="acces_menu">
+                          <i class="fa-regular fa-newspaper"></i>
+                          <a class="coco" href="./?action=emprunt">Mes prêts et prolongation</a>
+                        </div>
+                      </div>
+                      <div class="list_menu">
+                        <div class="acces_menu">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <a class="coco" href="./?action=reservation">Mes réservations</a>
+                        </div>
+                      </div>
+                      <div class="list_menu">
+                        <div class="acces_menu">
+                          <i class="fa-solid fa-list"></i>
+                          <a class="coco" href="./?action=liste">Mes Listes</a>
+                        </div>
+                      </div>
+                      <div class="list_menu">
+                        <div class="acces_menu">
+                          <i class="fa-solid fa-euro-sign"></i>
+                          <a class="coco" href="./?action=frais">Mes frais</a>
+                        </div>
+                      </div>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="./?action=hist_pret">Historique des prêts</a>
-                      <a class="dropdown-item" href="./?action=hist_recherche">Historique de recherche</a>
+                      <div class="list_menu">
+                        <div class="acces_menu">
+                          <i class="fa-regular fa-clock"></i>
+                          <a class="coco" href="./?action=hist_pret">Historique des prêts</a>
+                        </div>
+                      </div>
+                      <div class="acces_menu"></div>
+                      <div class="list_menu">
+                        <div class="acces_menu">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <a class="coco" href="./?action=hist_recherche">Historique de recherche</a>
+                        </div>
+                      </div>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="./?action=deconnexion">Deconnexion</a>
+                      <div class="list_menu">
+                        <div class="acces_menu">
+                          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                          <a class="coco" href="./?action=deconnexion">Deconnexion</a>
+                        </div>
+                      </div>
                     <?php } else { ?>
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Dossier d'abonné
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="./?action=connexion">Connexion</a>
+                        <div class="list_menu">
+                          <div class="acces_menu">
+                            <a class="coco" href="./?action=connexion">Connexion</a>
+                          </div>
+                        </div>
                       </div>
                     <?php } ?>
                   </li>

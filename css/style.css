@@ -4,11 +4,12 @@ html {
 body {
   margin-bottom: 60px;
   font-family: Arial;
-  color: #333;
+  /*color: #333;*/
   font-size: 14px;
   line-height: 1.3;
+  background-color: #eeeeee;
   /*scroll-behavior: smooth;*/
-  background: #f9f9f9 url(page-bg-1.jpg);
+  /*background: #f9f9f9 url(page-bg-1.jpg);*/
 }
 
 .bandeau img {
@@ -24,8 +25,8 @@ body {
 }
 
 .section {
-  margin-top: 10px;
-  background-color: #e3e2e2fc;
+  margin-top: 20px;
+  /*background-color: #e3e2e2fc;*/
   padding: 10px;
 }
 
@@ -246,7 +247,9 @@ p {
 
 /* Popup */
 
-.popup-overlay {
+.popup-overlay,
+.popup-signal,
+.popup-renouvel {
   display: none;
   position: fixed;
   z-index: 1040;
@@ -268,20 +271,54 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.popup_content {
+  max-width: 480px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fefefe;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-.popup-overlay .popup-content .controls {
+.popup-overlay .popup-content .controls,
+.popup-signal .popup_content .bouton,
+.popup-renouvel .popup_content .bouton {
   display: flex;
   justify-content: space-between;
   margin: 20px 0px 0px;
 }
+.popup-renouvel .popup_content .bouton {
+  display: flex;
+  justify-content: flex-end;
+}
 
-.popup-content p {
+.popup-content p,
+.popup_content p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 18px;
 }
+.popup_content .titre {
+  text-align: center;
+  font-size: 19px;
+  padding: 10px 0;
+}
+.popup_content hr {
+  display: block;
+  text-align: center;
+  border-top: 1px solid #a3a3a3;
+  padding: 10px 0px;
+  margin: 0;
+  width: 50%;
+  margin: 0 107px;
+}
 
 .popup-overlay .popup-content .controls button,
-.popup-overlay .popup-content .controls .button {
+.popup-overlay .popup-content .controls .button,
+.popup-signal .popup_content .bouton button,
+.popup-renouvel .popup_content .bouton button {
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -305,6 +342,18 @@ p {
 .button:hover {
   text-decoration: none;
 }
+.closeButtonS,
+.closeButtonR {
+  background: transparent;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #090909;
+  text-align: right;
+}
+.closeButtonS:hover,
+.closeButtonR:hover {
+  background-color: #bbb;
+}
 
 /* Recherche avancéé prêts*/
 
@@ -326,3 +375,59 @@ p {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+/*Page mon dossier*/
+.box_mon_dossier,
+.box_renseignements {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px #a3a3a3;
+  border-radius: 6px;
+}
+/* menue */
+div .list_menu:hover {
+  background-color: #dfdfdf;
+}
+.acces_menu a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 18px;
+  padding: 10px 10px;
+}
+.acces_menu {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.acces_menu i {
+  padding-right: 8px;
+  margin-right: 4px;
+}
+.coco {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+}
+/*.menue {
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  min-width: 10rem;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  background-clip: border-box;
+  margin: 0.125rem 0 0 0;
+  padding: 0.5rem 0;
+  background-color: #fff;
+  text-align: left;
+  display: none;
+  top: 100%;
+  left: 0;
+}*/

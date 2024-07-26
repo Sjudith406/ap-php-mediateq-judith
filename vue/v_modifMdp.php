@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title><?php $titre ?></title>
-</head>
-<body>
+
 <h2>Modification du mot de passe</h2>
 
 <form action="./index.php?action=modifMdp" method="post">
@@ -20,5 +15,4 @@
     </div>
 </form>
 
-</body>
-</html>
+
