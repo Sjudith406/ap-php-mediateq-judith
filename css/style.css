@@ -431,3 +431,50 @@ div .list_menu:hover {
   top: 100%;
   left: 0;
 }*/
+
+.box {
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 8px;
+}
+.reserve_horizontal {
+  display: flex;
+  flex: 1 1 auto;
+  width: 1000px;
+  height: 170px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 1px 1px 4px #bbb;
+  padding: 10px 20px;
+}
+.img_reserve {
+  padding: 5px 0px;
+}
+.form-reserve {
+  margin-bottom: 0;
+}
+
+.btn_reserve {
+  margin-top: auto;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.img-square-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-reserve,
+div form {
+  height: 47px;
+}
+div form button {
+  top: 110%;
+  /*left: 90%;
+  transform: translate(-50%, -50%); /* Centre le formulaire */
+}
